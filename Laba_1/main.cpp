@@ -8,7 +8,7 @@
 
 
 int main() {
-    setlocale(LC_ALL, "Russian");
+   setlocale(LC_ALL, "Russian");
     srand(time(NULL));
     
     int item, index, index_beginning, index_ending;
@@ -31,49 +31,30 @@ int main() {
     Sequence<int>* sequence = &list0;
     Sequence<int>* concat_sequence = &list1;
 
-
-    int* items1 = new int[100];
-    for (int i = 0; i < 100; i++)
+    int* items1 = new int[10000];
+    for (int i = 0; i < 10000; i++)
         items1[i] = rand();
-    LinkedListSequence<int> list_ex1(items1, 100);
-    Sequence<int>* sequence_ex1_bis = &list_ex1;
-    Sequence<int>* sequence_ex1_qs = sequence_ex1_bis;
-    Sequence<int>* sequence_ex1_ms = sequence_ex1_bis;
-
-
-    tmp.binary_insertion_sort(sequence_ex1_bis, comparator);
-    cout << endl;
-    tmp.quick_sort(sequence_ex1_qs, comparator);
-    cout << endl;
-    tmp.merge_sort(sequence_ex1_ms, comparator);
-    cout << endl;
-    /*int* items1 = new int[50000];
-    for (int i = 0; i < 50000; i++)
-        items1[i] = rand();
-    int* items2 = new int[60000];
-    for (int i = 0; i < 60000; i++)
+    int* items2 = new int[20000];
+    for (int i = 0; i < 20000; i++)
         items2[i] = rand();
-    int* items3 = new int[70000];
-    for (int i = 0; i < 70000; i++)
+    int* items3 = new int[30000];
+    for (int i = 0; i < 30000; i++)
         items3[i] = rand();
-        
 
-    LinkedListSequence<int> list_ex1(items1, 50000);
+    LinkedListSequence<int> list_ex1(items1, 10000);
     Sequence<int>* sequence_ex1_bis = &list_ex1;
     Sequence<int>* sequence_ex1_qs = sequence_ex1_bis;
     Sequence<int>* sequence_ex1_ms = sequence_ex1_bis;
-    */
-   /* LinkedListSequence<int> list_ex2(items2, 60000);
+
+    LinkedListSequence<int> list_ex2(items2, 20000);
     Sequence<int>* sequence_ex2_bis = &list_ex2;
     Sequence<int>* sequence_ex2_qs = sequence_ex2_bis;
     Sequence<int>* sequence_ex2_ms = sequence_ex2_bis;
 
-    LinkedListSequence<int> list_ex3(items3, 70000);
+    LinkedListSequence<int> list_ex3(items3, 30000);
     Sequence<int>* sequence_ex3_bis = &list_ex3;
     Sequence<int>* sequence_ex3_qs = sequence_ex3_bis;
     Sequence<int>* sequence_ex3_ms = sequence_ex3_bis;
-    */
-
     
     /*
     //быстрая сортировка
@@ -125,17 +106,17 @@ int main() {
     time_span3 = duration_cast<duration<double>>(t_end - t_start);
 
 
-    file.open("comparison.csv", fstream::out | fstream::in | fstream::app);
+    file.open("comparison1.csv", fstream::out | fstream::in | fstream::app);
     //Количество элементов;Время работы алгоритма сортировки двоичными вставками;Время работы алгоритма быстрой сортировки;Время работы алгоритма сортировки слиянием
     
-    file << 50000 << ";" << time_span1.count() << ";" << time_span4.count() << ";" << time_span7.count() << ";" << "\n";
-    file << 60000 << ";" << time_span2.count() << ";" << time_span5.count() << ";" << time_span8.count() << ";" << "\n";
-    file << 70000 << ";" << time_span3.count() << ";" << time_span6.count() << ";" << time_span9.count() << ";" << "\n";
+    file << 10000 << ";" << time_span1.count() << ";" << time_span4.count() << ";" << time_span7.count() << ";" << "\n";
+    file << 20000 << ";" << time_span2.count() << ";" << time_span5.count() << ";" << time_span8.count() << ";" << "\n";
+    file << 30000 << ";" << time_span3.count() << ";" << time_span6.count() << ";" << time_span9.count() << ";" << "\n";
     file.close();
     cout << "Результаты сравнительного анализа можно увидеть в файле comparison.csv" << endl;
     cout << endl;
 
 
-    */
-    return 0;
+    
+    return 0;*/
 }

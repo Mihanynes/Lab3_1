@@ -463,13 +463,13 @@ void LinkedList<T>::merge_sort_(bool(*comparator_ascending_order)(const T&, cons
 	head = head_.some_node;
 }
 template <class T>
-typename LinkedList<T>::Iterator LinkedList<T>::merge(Iterator f, Iterator s, bool(*comparator_ascending_order)(const T&, const T&)) {
+typename LinkedList<T>::Iterator LinkedList<T>::merge(Iterator f, Iterator s, bool(*comparator)(const T&, const T&)) {
 	Iterator result = nullptr;
 	if (f == nullptr)
 		return s;
 	if (s == nullptr)
 		return f;
-	if (comparator_ascending_order(s.operator*(), f.operator*())) {
+	if (comparator(s.operator*(), f.operator*())) {
 		result = s;
 		++s;
 	}
@@ -479,7 +479,7 @@ typename LinkedList<T>::Iterator LinkedList<T>::merge(Iterator f, Iterator s, bo
 	}
 	Iterator tmp = result;
 	while (f != nullptr && s != nullptr) {
-		if (comparator_ascending_order(s.operator*(), f.operator*())) {
+		if (comparator(s.operator*(), f.operator*())) {
 			tmp.some_node->next = s.some_node;
 			++s;
 		}

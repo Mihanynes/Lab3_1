@@ -1,0 +1,21 @@
+﻿  Laba_1_tests.cpp
+C:\Users\misha\Documents\C++\semestr3\Laba_1\Laba_1\main.cpp(12,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\misha\Documents\C++\semestr3\Laba_1\Laba_1\main.cpp(26,34): warning C4101: time_span2: неиспользованная локальная переменная
+C:\Users\misha\Documents\C++\semestr3\Laba_1\Laba_1\main.cpp(26,22): warning C4101: time_span1: неиспользованная локальная переменная
+C:\Users\misha\Documents\C++\semestr3\Laba_1\Laba_1\main.cpp(26,106): warning C4101: time_span8: неиспользованная локальная переменная
+C:\Users\misha\Documents\C++\semestr3\Laba_1\Laba_1\main.cpp(26,58): warning C4101: time_span4: неиспользованная локальная переменная
+C:\Users\misha\Documents\C++\semestr3\Laba_1\Laba_1\main.cpp(26,46): warning C4101: time_span3: неиспользованная локальная переменная
+C:\Users\misha\Documents\C++\semestr3\Laba_1\Laba_1\main.cpp(14,22): warning C4101: index_beginning: неиспользованная локальная переменная
+C:\Users\misha\Documents\C++\semestr3\Laba_1\Laba_1\main.cpp(26,118): warning C4101: time_span9: неиспользованная локальная переменная
+C:\Users\misha\Documents\C++\semestr3\Laba_1\Laba_1\main.cpp(23,18): warning C4101: tmp: неиспользованная локальная переменная
+C:\Users\misha\Documents\C++\semestr3\Laba_1\Laba_1\main.cpp(26,94): warning C4101: time_span7: неиспользованная локальная переменная
+C:\Users\misha\Documents\C++\semestr3\Laba_1\Laba_1\main.cpp(14,39): warning C4101: index_ending: неиспользованная локальная переменная
+C:\Users\misha\Documents\C++\semestr3\Laba_1\Laba_1\main.cpp(14,15): warning C4101: index: неиспользованная локальная переменная
+C:\Users\misha\Documents\C++\semestr3\Laba_1\Laba_1\main.cpp(14,9): warning C4101: item: неиспользованная локальная переменная
+C:\Users\misha\Documents\C++\semestr3\Laba_1\Laba_1\main.cpp(26,70): warning C4101: time_span5: неиспользованная локальная переменная
+C:\Users\misha\Documents\C++\semestr3\Laba_1\Laba_1\main.cpp(26,82): warning C4101: time_span6: неиспользованная локальная переменная
+C:\Users\misha\Documents\C++\semestr3\Laba_1\Laba_1\main.cpp(20,9): warning C4101: item0: неиспользованная локальная переменная
+C:\Users\misha\Documents\C++\semestr3\Laba_1\Laba_1\linked_list.cpp(133): warning C4172: возвращение адреса локальной или временной переменной : number
+C:\Users\misha\Documents\C++\semestr3\Laba_1\Laba_1\linked_list.cpp(149): warning C4172: возвращение адреса локальной или временной переменной : number
+C:\Users\misha\Documents\C++\semestr3\Laba_1\Laba_1\linked_list.cpp(173): warning C4172: возвращение адреса локальной или временной переменной
+  Laba_1_tests.vcxproj -> C:\Users\misha\Documents\C++\semestr3\Laba_1\x64\Debug\Laba_1_tests.dll
